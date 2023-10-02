@@ -7,3 +7,4 @@
 #adicionar mapa e fluxo do processo
 
 #Alterado o  IAM
+Configurado Replica
