@@ -27,15 +27,15 @@
 name: Deploy to Amazon ECS
 
 on:
-  #push:
-  #  branches: [ "main" ]
+  push:
+    branches: [ "main" ]
   
-  pull_request:
-    branches:
-      - main
-    types:
-      - opened
-      - synchronize
+  #pull_request:
+  #  branches:
+  #    - main
+   # types:
+   #   - opened
+   #   - synchronize
 
 env:
   AWS_REGION: us-east-1                                           # set this to your preferred AWS region, e.g. us-west-1
@@ -55,7 +55,7 @@ jobs:
   deploy:
     name: Deploy-levva
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' && github.event.action != 'closed' && github.event.sender.login == 'claudioferejes'
+    if: github.event_name == 'push' && github.event.sender.login == 'claudioferejes'
     environment: production
 
     steps:
