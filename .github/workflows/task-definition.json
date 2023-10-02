@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:714456381100:task-definition/levva-task:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:714456381100:task-definition/levva-task:13",
     "containerDefinitions": [
         {
             "name": "levva_desafio",
-            "image": "714456381100.dkr.ecr.us-east-1.amazonaws.com/levva_ecr:latest",
+            "image": "714456381100.dkr.ecr.us-east-1.amazonaws.com/levva_ecr:69761cadbaaeff585c44b8488edfceb306759e86",
             "cpu": 128,
             "memory": 512,
             "portMappings": [
@@ -22,7 +22,7 @@
     "family": "levva-task",
     "executionRoleArn": "arn:aws:iam::714456381100:role/ecs_execution_role_levva",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 13,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -49,7 +49,7 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "registeredAt": "2023-10-01T16:43:01.116Z",
-    "registeredBy": "arn:aws:iam::714456381100:user/terraform",
+    "registeredAt": "2023-10-02T05:58:38.123Z",
+    "registeredBy": "arn:aws:iam::714456381100:user/levva_desafio",
     "tags": []
 }
